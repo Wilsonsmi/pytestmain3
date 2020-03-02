@@ -1,0 +1,26 @@
+********************************************************************************
+Test case WV-00-000 started
+Traceback (most recent call last):
+  File "/home/wison/pythonpytestautomationweb/TestCasess/Test_Demo.py", line 44, in test_WV00000
+    self.d.get(self.url1.webViewerUAT)
+AttributeError: 'TestExampleOne' object has no attribute 'd'
+Exception Occured in test case WV-00-000
+********************************************************************************
+********************************************************************************
+Test case WV-00-000 started
+Test case WV-00-000 passed
+Total time taken by Test case WV-00-000 to finish: 0.16309690475463867 seconds
+********************************************************************************
+********************************************************************************
+Test case WV-00-000 started
+Test case WV-00-000 passed
+Total time taken by Test case WV-00-000 to finish: 0.16658854484558105 seconds
+********************************************************************************
+Suite started at Thu Feb 27 12:59:30 2020
+Suite ended at Thu Feb 27 12:59:41 2020
+Total time taken by Test Suite to finish: 10.532852172851562 seconds
+********************************************************************************
+Test case WV-00-000 started
+Test case WV-00-000 passed
+Total time taken by Test case WV-00-000 to finish: 0.16717529296875 seconds
+********************************************************************************
