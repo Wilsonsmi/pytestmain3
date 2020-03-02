@@ -41,7 +41,7 @@ node
 			sh 'virtualenv -p /home/wison/venv/bin/python3 venv'
 			sh '. /home/wison/venv/bin/activate && pip install -U pytest'
 			sh '. /home/wison/venv/bin/activate && pip install -r requirements.txt'
-			sh '. /home/wison/venv/bin/activate && py.test --junit-xml=test_results.xml test || true'
+			sh '. /home/wison/pythonpytest/venv/bin/activate && py.test --junit-xml=test_results.xml TestCasess/Test_Demo.py || true'
 			junit keepLongStdio: true, allowEmptyResults: true, testResults: 'test_results.xml'
 		}
 	}
