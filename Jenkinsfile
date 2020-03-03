@@ -38,10 +38,9 @@ node
 	{
 		echo 'Static code'
 		dir('pytest') {
-			sh 'virtualenv -p /home/wison/venv/bin/python3 venv'
-			sh '. /home/wilson/venv/bin/activate && pip install -U pytest'
-			sh '. /home/wilson/venv/bin/activate && pip install -r requirements.txt'
-			sh '. /home/wilson/venv/bin/activate && py.test --junit-xml=test_results.xml /home/wison/Downloads/pytest/TestCasess/Test_Demo.py || true'
+			pip install -U pytest'
+			pip install -r requirements.txt'
+			py.test --junit-xml=test_results.xml /home/wison/Downloads/pytest/TestCasess/Test_Demo.py || true'
 			junit keepLongStdio: true, allowEmptyResults: true, testResults: 'test_results.xml'
 		}
 	}
