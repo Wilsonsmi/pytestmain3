@@ -38,8 +38,9 @@ node
 	{
 		echo 'Static code'
 		dir('pytest') {
-			pip3 install -U pytest'
-			pip3 install -r requirements.txt'
+			sh 'virtualenv -p /home/wison/venv/bin/python3 venv'
+			sh '. /home/wison/venv/bin/activate && pip3 install -U pytest'
+			sh '. /home/wison/venv/bin/activate && pip3 install -r requirements.txt'
 			py.test --junit-xml=test_results.xml /home/wison/Downloads/pytest/TestCasess/Test_Demo.py || true'
 			junit keepLongStdio: true, allowEmptyResults: true, testResults: 'test_results.xml'
 		}
