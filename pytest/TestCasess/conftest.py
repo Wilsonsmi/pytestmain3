@@ -13,7 +13,7 @@ sys.path.insert(0, os.path.dirname(os.getcwd()) +  '/StaticTexts')
 sys.path.insert(0, os.path.dirname(os.getcwd()) +  '/PageObjects')
 sys.path.insert(0, os.path.dirname(os.getcwd()) +  '/Utilities')
 sys.path.insert(0, os.path.dirname(os.getcwd()) +  '/Scripts')
-from Utility import Utility
+# from Utility import Utility
 from DriverUtility import DriverUtility
 from Browser import Browser
 from URL import URL
