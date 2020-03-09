@@ -31,9 +31,9 @@
 
 
 
-# @pytest.mark.usefixtures("setup", "setUpClass")
+@pytest.mark.usefixtures("setup", "setUpClass")
 class TestExampleOne:
-# 	@pytest.mark.smoke
+	@pytest.mark.smoke
 	def test_WV00000():
 		print "wilson"
 #  		parser = ConfigParser()
