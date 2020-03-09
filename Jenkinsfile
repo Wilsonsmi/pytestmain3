@@ -53,7 +53,7 @@ node
 			//sh 'virtualenv -p . python/pytest/bin/python3 venv'
 			sh 'pip3 install -U pytest'
 			sh 'pip3 install -r requirements.txt'
-			sh '. /home/wison/venv/bin/activate && pytest -s TestCasess/Test_Demo.py -v || true'
+			sh '. /home/wison/venv/bin/activate && pytest -s /TestCasess/Test_Demo.py -v || true'
 			//py.test "./python/pytest/test/test_simple_example.py" --junit-xml=test_results.xml || true
 			junit keepLongStdio: true, allowEmptyResults: true, testResults: 'test_results.xml'
 		}
